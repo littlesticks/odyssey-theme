@@ -126,6 +126,15 @@
 	--theme-surface-2: #072650;
 	--theme-on-surface-2: #ffffff;
 }
+#home-hero-video {
+    width: 100%;
+    max-width: 800px; /* Adjust max-width to control the largest size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	border-radius: 4%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 [data-theme='sand'] {
 	/* Theme Colors */

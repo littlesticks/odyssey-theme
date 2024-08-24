@@ -13,8 +13,8 @@ import Layout from '../../layouts/Page.astro';
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'Landing Page #1 | Astro Odyssey Theme',
-	description: 'Landing Page #1 | Astro Odyssey Theme',
+	title: 'Research Community',
+	description: 'Research Community Page',
 };
 ---
 
@@ -26,8 +26,8 @@ const seo = {
 <Layout {seo}>
 	<TextAndImageHero reversed>
 		<div slot="text-container">
-			<h1>Don't Reinvent the Wheel</h1>
-			<p>Use Odyssey Theme to jumpstart your company's marketing website.</p>
+			<h1>Chart your path to a career in research</h1>
+			<p>Covering topics from securing Internsips to applications for higher studies and upskilling in your domains of interest.</p>
 		</div>
 		<div slot="btns-container">
 			<Button href="/theme/get-started" customIcon
@@ -36,13 +36,12 @@ const seo = {
 				</Fragment></Button
 			>
 		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/landing-1/landing-hero-1.jpg"
-				alt="Astro Odyssee"
-				id="home-hero-image"
-			/>
-		</picture>
+		<video slot="image-container" id="home-hero-video" autoplay muted loop playsinline>
+			<source src="/assets/images/landing-1/rc_anim.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		
+		
 	</TextAndImageHero>
 
 	<CustomerQuoteSection
