@@ -26,8 +26,8 @@ export const footerLists = [
 		title: 'Landing Pages',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Research Community',
+				slug: '/landing-pages/research-community',
 			},
 			{
 				title: 'Landing Page 2',
@@ -40,11 +40,11 @@ export const footerLists = [
 		],
 	},
 	{
-		title: 'Company',
+		title: 'council',
 		items: [
 			{
 				title: 'About',
-				slug: '/company/about',
+				slug: '/council/about',
 			},
 			{
 				title: 'Blog',
@@ -52,7 +52,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Contact',
-				slug: '/company/contact',
+				slug: '/council/contact',
 			},
 		],
 	},

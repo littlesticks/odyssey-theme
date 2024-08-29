@@ -1,0 +1,135 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+  title: `Council Structure | Astro Odyssey Theme`,
+  description: `This page describes the structure of the council and provides contact information for key members.`,
+};
+---
+
+<Layout seo={seo}>
+  <TextSection narrow>
+    <h1>Council Structure</h1>
+
+    <p>This page describes the structure of the council and provides contact information for key members.</p>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="Dean Academic">
+        <h2>Dean Academic</h2>
+        <p>
+          <strong>Name:</strong> Dr. John Doe<br>
+          <strong></strong> dean.academic@example.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="Adean Academic">
+        <h2>Adean Academic</h2>
+        <p>
+          <strong>Name:</strong> Dr. Jane Smith<br>
+          <strong></strong> adean.academic@example.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="VP Gymkhana">
+        <h2>VP Gymkhana</h2>
+        <p>
+          <strong>Name:</strong> Mr. Michael Brown<br>
+          <strong></strong> vp.gymkhana@example.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="Undergraduate Representative">
+        <h2>Undergraduate Representative</h2>
+        <p>
+          <strong>Name:</strong> Ms. Sarah Johnson<br>
+          <strong></strong> ug.representative@example.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="Secretary Girls">
+        <h2>Secretaries</h2>
+        <h3>Girls</h3>
+        <p>
+          <strong>Name:</strong> Ms. Anna White<br>
+          <strong></strong> sec.girls@example.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="Secretary Sophomore Year">
+        <h3>Sophomore Year</h3>
+        <p>
+          <strong>Name:</strong> Mr. David Green<br>
+          <strong></strong> sec.sophomore@example.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://via.placeholder.com/150" alt="Secretary Junior Year">
+        <h3>Junior Year</h3>
+        <p>
+          <strong>Name:</strong> Ms. Laura Black<br>
+          <strong></strong> sec.junior@example.com
+        </p>
+      </div>
+    </div>
+  </TextSection>
+</Layout>
+
+<style>
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin: 0 -8px;
+  }
+
+  .contact-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card img {
+    border-radius: 50%;
+    margin-bottom: 16px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-card h2, .contact-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  .contact-card p {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+</style>
