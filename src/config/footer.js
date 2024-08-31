@@ -16,7 +16,7 @@ export const footerSocials = [
   },
   {
     name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
+    url: 'https://discord.gg/d4ZC7d2ZXY',
     icon: "ic:baseline-discord",
   },
 ]
