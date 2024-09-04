@@ -20,7 +20,7 @@ const seo = {
         <h2>Dean Academic</h2>
         <p>
           <strong>Name:</strong> Dr. John Doe<br>
-          <strong></strong> dean.academic@example.com
+          <strong>Email:</strong> dean.academic@iitp.ac.in
         </p>
       </div>
 
@@ -29,35 +29,43 @@ const seo = {
         <h2>Adean Academic</h2>
         <p>
           <strong>Name:</strong> Dr. Jane Smith<br>
-          <strong></strong> adean.academic@example.com
+          <strong>Email:</strong> adean.academic@iitp.ac.in
         </p>
       </div>
+    </div>
 
+    <hr class="divider">
+
+    <div class="contact-cards">
       <div class="contact-card">
         <img src="https://via.placeholder.com/150" alt="VP Gymkhana">
         <h2>VP Gymkhana</h2>
         <p>
           <strong>Name:</strong> Mr. Michael Brown<br>
-          <strong></strong> vp.gymkhana@example.com
+          <strong>Email:</strong> vp.gymkhana@iitp.ac.in
         </p>
       </div>
 
       <div class="contact-card">
         <img src="https://via.placeholder.com/150" alt="Undergraduate Representative">
-        <h2>Undergraduate Representative</h2>
+        <h2>UG Representative</h2>
         <p>
           <strong>Name:</strong> Ms. Sarah Johnson<br>
-          <strong></strong> ug.representative@example.com
+          <strong>Email:</strong> ug.representative@iitp.ac.in
         </p>
       </div>
+    </div>
 
+    <hr class="divider">
+
+    <div class="contact-cards">
       <div class="contact-card">
         <img src="https://via.placeholder.com/150" alt="Secretary Girls">
         <h2>Secretaries</h2>
         <h3>Girls</h3>
         <p>
           <strong>Name:</strong> Ms. Anna White<br>
-          <strong></strong> sec.girls@example.com
+          <strong>Email:</strong> sec.girls@iitp.ac.in
         </p>
       </div>
 
@@ -66,7 +74,7 @@ const seo = {
         <h3>Sophomore Year</h3>
         <p>
           <strong>Name:</strong> Mr. David Green<br>
-          <strong></strong> sec.sophomore@example.com
+          <strong>Email:</strong> sec.sophomore@iitp.ac.in
         </p>
       </div>
 
@@ -75,7 +83,7 @@ const seo = {
         <h3>Junior Year</h3>
         <p>
           <strong>Name:</strong> Ms. Laura Black<br>
-          <strong></strong> sec.junior@example.com
+          <strong>Email:</strong> sec.junior@iitp.ac.in
         </p>
       </div>
     </div>
@@ -84,8 +92,9 @@ const seo = {
 
 <style>
   .contact-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     margin: 0 -8px;
   }
@@ -101,6 +110,7 @@ const seo = {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 300px;
   }
 
   .contact-card img {
@@ -131,5 +141,11 @@ const seo = {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+  }
+
+  .divider {
+    margin: 32px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
   }
 </style>

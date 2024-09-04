@@ -1,22 +1,18 @@
 export const footerSocials = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
+  
   {
     name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
+    url: 'https://www.youtube.com/@researchcommunityiitp',
     icon: "mdi:youtube",
   },
   {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
+    name: 'Instagram',
+    url: 'https://www.instagram.com/researchcommunity.iitp/',
+    icon: "mdi:instagram",
   },
   {
     name: 'Discord',
-    url: 'https://discord.gg/d4ZC7d2ZXY',
+    url: 'https://discord.com/invite/3ajZP647',
     icon: "ic:baseline-discord",
   },
 ]
@@ -46,11 +42,11 @@ export const footerLists = [
 				slug: '/council/about',
 			},
 			{
-				title: 'Blog',
+				title: 'Blogs',
 				slug: '/blog',
 			},
 			{
-				title: 'Contact',
+				title: 'FAQs',
 				slug: '/council/contact',
 			},
 		],
