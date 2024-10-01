@@ -25,8 +25,8 @@ export const footerLists = [
 				slug: '/landing-pages/research-community',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Student Mentorship Program',
+				slug: '/landing-pages/smp',
 			},
 			// {
 			// 	title: 'Landing Page 3',
@@ -51,27 +51,27 @@ export const footerLists = [
 			},
 		],
 	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-			{
-				title: 'Theme Setup',
-				slug: '/theme/theme-setup',
-			},
-			{
-				title: 'Customizing Odyssey',
-				slug: '/theme/customizing-odyssey',
-			},
-		],
-	},
+	// {
+	// 	title: 'Theme',
+	// 	items: [
+	// 		{
+	// 			title: 'Get Started',
+	// 			slug: '/theme/get-started',
+	// 		},
+	// 		{
+	// 			title: 'Style Guide',
+	// 			slug: '/theme/style-guide',
+	// 		},
+	// 		{
+	// 			title: 'Theme Setup',
+	// 			slug: '/theme/theme-setup',
+	// 		},
+	// 		{
+	// 			title: 'Customizing Odyssey',
+	// 			slug: '/theme/customizing-odyssey',
+	// 		},
+	// 	],
+	// },
 	{
 		title: 'Awesome Research',
 		items: [

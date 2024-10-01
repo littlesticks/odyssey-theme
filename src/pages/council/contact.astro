@@ -1,7 +1,7 @@
 ---
 import ContactForm from '../../components/forms/ContactForm.astro';
 import Layout from '../../layouts/Page.astro';
-import { Container } from '@components/odyssey-theme';
+import { Container, StickyTextImageSection } from '@components/odyssey-theme';
 
 const seo = {
 	title: 'Contact | Astro Odyssey Theme',
@@ -12,10 +12,37 @@ const seo = {
 <Layout seo={seo}>
 	<Container style="width: 80%; height: 1200px; padding: 2rem; margin: 2rem auto; border-radius: 10px;">
 		<h2>FAQ's</h2>
-		<iframe src="https://docs.google.com/spreadsheets/d/1KEABzx3eWB6IAeRd5XcIg-wo1QvIft8TlMjUCW2PVNA/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 100%;"></iframe>
+		<iframe src="https://docs.google.com/spreadsheets/d/1KEABzx3eWB6IAeRd5XcIg-wo1QvIft8TlMjUCW2PVNA/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 600px;"></iframe>
 		<a href="https://docs.google.com/spreadsheets/d/1KEABzx3eWB6IAeRd5XcIg-wo1QvIft8TlMjUCW2PVNA/pubhtml?widget=true&amp;headers=false" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--theme-primary); color: var(--theme-on-primary); border-radius: var(--theme-shape-radius); text-decoration: none;">Go to Spreadsheet</a>
 	</Container>
+
+<StickyTextImageSection>
+		<div slot="text-container">
+			<h2>ACC Sheet</h2>
+			<h3>FAQ's</h3>
+			<p>
+				Find answers to common questions about the ACC process, including timelines, required documents, and steps for approval.
+			</p>
+			<h3>Research Internship Resources</h3>
+			<p>
+				Explore curated resources to assist you in securing and excelling in research internships, including proposal templates and application tips.
+			</p>
+			<h3>Point of Contact</h3>
+			<p>
+				For further assistance, please reach out to the designated department coordinators or the academic office for guidance.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/screenshots/faq.jpg"
+				alt="Research and Internship"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+	
 </Layout>
+
 
 <style>
 	.contact-hero__section {
@@ -38,9 +65,15 @@ const seo = {
 		flex-direction: column;
 		justify-content: center;
 	}
+	img {
+		border-radius: 20px;
+	}
 	@media (max-width: 768px) {
 		.contact-hero__section {
 			grid-template-columns: 1fr;
 		}
+	}
+	iframe {
+		border-radius: 10px;
 	}
 </style>

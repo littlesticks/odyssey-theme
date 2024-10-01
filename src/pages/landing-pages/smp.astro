@@ -2,10 +2,18 @@
 import Layout from '../../layouts/Base.astro';
 import LandingContactForm from '../../components/forms/LandingContactForm.astro';
 import Logo from '../../components/Logo.astro';
-
+import {
+	AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+} from '@components/odyssey-theme';
 const seo = {
-	title: 'Landing Page #2 | Astro Odyssey Theme',
-	description: 'Landing Page #2 | Astro Odyssey Theme',
+    title: 'Student Mentorship Program | IIT Patna',
+    description: 'Learn about the Student Mentorship Program at IIT Patna.',
 };
 ---
 
@@ -20,16 +28,25 @@ const seo = {
       <picture>
         <img
           src="/assets/images/home/classic-hero.jpg"
-          alt="Astro Odyssey"
+          alt="IIT Patna"
           class="full-page-split__image"
         />
       </picture>
     </section>
     <section class="full-page-split__content-section">
       <div class="full-page-split__content-container">  
-        <h1>Contact Us For a Free Consultation</h1>
-        <p>Fill out the form below to schedule a free consultation on your business' website needs.</p>
-        <LandingContactForm/>
+        <h1>Student Mentorship Program at IIT Patna</h1>
+        <p>Dear Students,</p>
+        <p>
+          The Student Mentorship Program at IIT Patna is designed to help you navigate your academic journey with ease. Our mentors are here to guide you through the challenges of college life, help you make informed decisions, and provide you with the support you need to succeed.
+          They are allotted based on your branch, year of study, career interests and hobbies. They will help you with your academics, career planning, and personal development. 
+      </div>
+      <!-- add 2 buttons -->
+      <div class="button-group">
+        <div style="display: flex; gap: 1rem; margin: 5%;">
+          <Button href="/assets/documents/Student Mentorship Program (1).pptx">Download Program Oveview</Button>
+          <Button href="/assets/documents/SMP Policy (1).pdf">View Guidelines</Button>
+        </div>
       </div>
     </section>
   </div>
@@ -88,4 +105,3 @@ const seo = {
   }
 }
 </style>
-
