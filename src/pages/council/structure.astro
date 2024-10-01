@@ -3,7 +3,7 @@ import { TextSection } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 
 const seo = {
-  title: `Council Structure | Astro Odyssey Theme`,
+  title: `Council Structure`,
   description: `This page describes the structure of the council and provides contact information for key members.`,
 };
 ---
@@ -91,6 +91,40 @@ const seo = {
 </Layout>
 
 <style>
+  :root {
+    --primary-color-light: #007acc;
+    --secondary-color-light: #005bb5;
+    --background-color-light: #f9f9f9;
+    --text-color-light: #333;
+    --border-color-light: #ccc;
+    --hover-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    --primary-color-dark: #1e90ff;
+    --secondary-color-dark: #1c7ed6;
+    --background-color-dark: #2e2e2e;
+    --text-color-dark: #f1f1f1;
+    --border-color-dark: #444;
+    --hover-shadow-dark: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  [data-theme="light"] {
+    --primary-color: var(--primary-color-light);
+    --secondary-color: var(--secondary-color-light);
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+    --border-color: var(--border-color-light);
+    --hover-shadow: var(--hover-shadow-light);
+  }
+
+  [data-theme="dark"] {
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --border-color: var(--border-color-dark);
+    --hover-shadow: var(--hover-shadow-dark);
+  }
+
   .contact-cards {
     display: flex;
     flex-wrap: wrap;
@@ -100,10 +134,10 @@ const seo = {
   }
 
   .contact-card {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     padding: 16px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: var(--background-color);
     transition: transform 0.2s, box-shadow 0.2s;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -111,6 +145,7 @@ const seo = {
     flex-direction: column;
     align-items: center;
     max-width: 300px;
+    box-shadow: var(--hover-shadow);
   }
 
   .contact-card img {
@@ -123,7 +158,7 @@ const seo = {
 
   .contact-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .contact-card h2, .contact-card h3 {
@@ -133,6 +168,7 @@ const seo = {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    color: var(--primary-color);
   }
 
   .contact-card p {
@@ -141,11 +177,12 @@ const seo = {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    color: var(--text-color);
   }
 
   .divider {
     margin: 32px 0;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border-color);
   }
 </style>
